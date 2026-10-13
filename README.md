@@ -2,6 +2,8 @@
 
 A React podcast player where you can listen to podcasts, browse the full list, and organize them into your own playlists.
 
+for live demo: https://sunny-gumption-acb374.netlify.app 
+
 ## Features
 
 - **Audio player:** play/pause, next/previous, seek bar with live current time, volume control
