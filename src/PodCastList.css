@@ -1,0 +1,64 @@
+.podcast-list {
+  background-color: #808080b0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  height: 80%;
+  overflow: auto;
+}
+
+.podcast-nums {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  gap: 10px;
+}
+
+.podcast {
+  background-color: #808080b0;
+  margin-left: 10px;
+}
+
+.list div {
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.list div:hover {
+  background-color: forestgreen;
+}
+
+.list .active {
+  background-color: forestgreen;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #ff5722, #ff9800); /* Gradient handle */
+  border-radius: 10px; /* Makes the handle rounded */
+  border: 3px solid #f1f1f1; /* Creates padding between thumb and track edge */
+}
+
+.podcast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4caf50;
+  width: 60px;
+  height: 60px;
+}

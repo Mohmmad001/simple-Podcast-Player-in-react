@@ -1,0 +1,178 @@
+.playlist-section {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.main {
+  background-color: #808080b0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.create-new {
+  text-align: left;
+  margin: 10px;
+  color: white;
+  text-align: left;
+  margin: 10px;
+  color: white;
+  background-color: #808080b0;
+  width: 95%;
+  height: 23%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.create-new .title {
+  margin-left: -5px;
+  color: white;
+}
+
+.create-new button {
+  background-color: #4caf50;
+  height: 30px;
+  width: 55px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+input {
+  width: 85%;
+  border-radius: 5px;
+  margin: 5px;
+  height: 30px;
+  background-color: #808080b0;
+  color: white;
+  font-size: 25px;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 95%;
+  height: 250px;
+  gap: 10px;
+  margin-left: 17px;
+  margin-top: 10px;
+  overflow: auto;
+  background-color: #808080b0;
+  border-radius: 5px;
+}
+
+.playlist-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.playlist-header .playlist-name {
+  font-size: 28px;
+}
+
+.playlist-header button {
+  background-color: #4caf50;
+
+  color: white;
+
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+.playlist input {
+  width: 98%;
+}
+
+.all-playlist {
+  width: 100%;
+  margin: 4px;
+}
+
+.playlist-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  position: relative;
+}
+
+.info {
+  background-color: #808080b0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.info:hover {
+  background-color: forestgreen;
+}
+
+.info .title {
+  color: white;
+  font-size: 20px;
+}
+
+.info .author {
+  color: darkgrey;
+}
+
+.info .duration {
+  margin-right: 10px;
+}
+
+.pod-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.active {
+  background-color: forestgreen;
+}
+
+.search-result {
+  display: none;
+  width: 98%;
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: #808080;
+  z-index: 10;
+}
+
+.playlist-list input:focus + .search-result {
+  display: block;
+}
+
+.search-result div {
+  background-color: #808080;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.search-result div:hover {
+  background-color: #4caf50;
+  display: block;
+}
